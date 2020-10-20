@@ -1,12 +1,13 @@
 import axios from 'axios';
 import facultyCard from './Components/facultyCard';
 
-const searchBtn = document.getElementById('search-btn');
+const searchForm = document.getElementById('search-form');
 const inputBox = document.getElementById('faculty-query');
 const result = document.getElementById('result');
 const api = '/.netlify/functions';
 
-searchBtn.addEventListener('click', () => {
+searchForm.addEventListener('submit', (e) => {
+  e.preventDefault();
   let query = inputBox.value;
   if (!query) {
     setMessage('Query Cannot Be Empty');
@@ -19,6 +20,7 @@ searchBtn.addEventListener('click', () => {
       generateCard(res.data);
     })
     .catch((err) => {
+      console.log(err);
       setMessage('Some Error Occurred');
     });
 });
@@ -47,8 +49,6 @@ const setMessage = (msg) => {
 
 const setSpinner = () => {
   result.innerHTML = `
-  <div class="loading">
-    Loading
-  </div>
+    <div class="loader"></div>
   `;
 };

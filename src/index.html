@@ -3,24 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script defer src="./js/index.js"></script>
-    <title>CEC Faculty</title>
+    <title>CEC Faculty Search</title>
   </head>
   <body>
-    <h1>Faculty Search</h1>
-    <div class="search-box">
-      <input type="text" id="faculty-query" />
-      <button id="search-btn">Search</button>
-    </div>
+    <nav><h1>CEC Faculty Search</h1></nav>
+    <main>
+    <form class="search-form" id="search-form">
+      <input placeholder="Faculty Name" type="text" id="faculty-query" />
+      <button type="submit" id="search-btn">Search</button>
+    </form>
     <div id="result">
-      <div class="faculty">
-        <img src="" alt="" />
-        <h3>Murali Mohan</h3>
-        <p>Assistant Professor</p>
-        <a href="">Email</a>
-        <a href="">CV</a>
-      </div>
+      Search Faculty.
+    </div>
+    </main>
     </div>
   </body>
 </html>

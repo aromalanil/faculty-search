@@ -15,7 +15,6 @@ exports.handler = async (event, callback) => {
       .join('')
       .includes(query.toLowerCase().split(' ').join(''));
   });
-  const data = 'test';
   return {
     statusCode: 200,
     body: JSON.stringify(filteredData),
