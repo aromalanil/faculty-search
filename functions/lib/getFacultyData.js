@@ -30,7 +30,7 @@ const getCV = (anchorList) => {
 const getImage = (facultyDiv) => {
   const imageSrc = facultyDiv.find('img').attr('src');
   if (imageSrc.includes('no_photo_avatar.png')) return null;
-  return `http://cectl.ac.in${imageSrc}`;
+  return imageSrc;
 };
 
 const getFaculty = (data, department) => {
