@@ -1,7 +1,7 @@
 {
   "name": "get-faculty-web",
-  "version": "0.1.0",
-  "description": "",
+  "version": "1.0.0",
+  "description": "A website to search faculties of College of Engineering Cherthala",
   "main": "script.js",
   "scripts": {
     "dev": "parcel src/index.html",
